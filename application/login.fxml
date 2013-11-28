@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color : #00ff7f" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Logincontroller">
+  <children>
+    <PasswordField fx:id="password" layoutX="201.0" layoutY="260.0" onAction="#login" prefWidth="200.0" />
+    <TextField fx:id="username" layoutX="200.0" layoutY="216.0" onAction="#login" prefWidth="200.0" />
+    <Button id="ipad-dark-grey" fx:id="loginbtn" layoutX="260.0" layoutY="294.0" mnemonicParsing="false" onAction="#login" style="#ipad-dark-grey {&#10;    -fx-background-color:&#10;        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),&#10;        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),&#10;       &#10;    -fx-background-insets: 0,1,4,5,6;&#10;    -fx-background-radius: 9,8,5,4,3;&#10;    -fx-padding: 8 16 8 16;&#10;    -fx-font-family: &quot;Helvetica&quot;;&#10;    -fx-font-size: 12px;&#10;    -fx-font-weight: bold;&#10;    -fx-text-fill: white;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) ,&#10;                1, 0.0 , 0 , 1);&#10;}" text="Login" />
+    <Label id="welcome-text" layoutX="207.0" layoutY="56.0" text="Welcome">
+      <font>
+        <Font name="Bodoni MT Black" size="40.0" />
+      </font>
+    </Label>
+    <Label id="welcome-text" layoutX="276.0" layoutY="102.0" text="to">
+      <font>
+        <Font name="Bodoni MT" size="40.0" />
+      </font>
+    </Label>
+    <Label id="welcome-text" layoutX="85.0" layoutY="141.0" text="Sam Body Builder Recorder">
+      <font>
+        <Font name="Bodoni MT Black" size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="126.0" layoutY="219.0" text="Username">
+      <font>
+        <Font name="Times New Roman" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="128.0" layoutY="263.0" text="Password" />
+    <Label fx:id="comment" layoutX="279.0" layoutY="334.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>
